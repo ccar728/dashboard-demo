@@ -1,0 +1,24 @@
+<button (click)="getData()">apply form data</button>
+
+<div>
+  <ul class="account_executive">
+    <li>Account Executive</li>
+  </ul>
+  <ul class="daily_turnover">
+    <li>Daily Turnover</li>
+  </ul>
+  <ul class="accumulated_turnover">
+    <li>Accumulated Turnover</li>
+  </ul>
+</div>
+<table>
+  <tr ng-repeat="x in response">
+    <td></td>
+  </tr>
+</table>
+
+<ul>
+  <li *ngFor="let item of list">
+    {{item}}
+  </li>
+</ul>

@@ -1,0 +1,33 @@
+<h2>{{title}}</h2>
+
+<p>我是{{msg}}</p>
+
+<p>{{userinfo.username}}</p>
+
+<div>这是{{message}}</div>
+
+
+<hr>
+<div title="我是div">
+  鼠标放上去
+</div>
+<hr>
+<div [title] = message>
+  张三
+</div>
+
+<div [innerHTML]="content" class="hi">
+
+</div>
+<hr>
+
+<ul>
+  <li *ngFor="let item of arr">
+    {{item}}
+  </li>
+  <li *ngFor="let person of userList">
+    <hr>
+    age:{{person.age}}
+    name:{{person.userName}}
+  </li>
+</ul>
